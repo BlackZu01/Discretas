@@ -42,11 +42,11 @@ solution = problema.havel_hakimi()
 
 print(f'{problema.sec_sec2} - {solution}')
 
-answer = int(input('[+] Do you want to see it in a graph?  (press 0: yes - press 1: otherwise): '))
-
-if answer == 0:
-    ploting(sec2, solution)
-elif answer == 1:
-    print('Thanks')
-else:
-    print('Enter a valid option')
+if solution[1]:
+    answer = int(input('[+] Do you want to see it in a graph?  (press 0: yes - press 1: otherwise): '))
+    if answer == 0:
+        ploting(sec2, solution)
+    elif answer == 1:
+        print('Thanks')
+    else:
+        print('Enter a valid option')
